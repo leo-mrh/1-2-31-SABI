@@ -1,0 +1,8 @@
+.skin-blue .sidebar-menu>li.header {
+    color: #f0f5f7;
+    background: #1a2226;
+}
+
+.login-page .main-footer {
+    display: none;
+}
