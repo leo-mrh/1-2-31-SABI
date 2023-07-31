@@ -71,7 +71,7 @@ include_once('templates/navegacion.php');
             <div class="col-lg-3 offset-lg-1">
                 <div class="contact-widget">
                     <div class="cw-item">
-                        <h5>Ubicación</h5>
+                        <h5>Dirección</h5>
                         <ul>
                             <li>Calle Niños Héroes, </li>
                             <li>Xonacatlán, Edo de Mex.</li>
