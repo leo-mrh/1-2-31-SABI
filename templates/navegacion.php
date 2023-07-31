@@ -30,7 +30,7 @@
                 </div>
                 <div class="user-access">
                     <a href="#">Registrar</a>
-                    <a href="#" class="in">Iniciar Sesión</a>
+                    <a href="admin/login.php" class="in">Iniciar Sesión</a>
                 </div>
                 <nav class="main-menu mobile-menu">
                     <ul>
@@ -43,7 +43,7 @@
                             </ul>
                         </li>
                         <li><a href="quienes-somos.php">Quiénes Somos</a></li>
-                        <li><a href="blog.php">Blog</a></li>
+                        <li><a href="ubicacion.php">Ubicación</a></li>
                         <li><a href="contacto.php">Contáctanos</a></li>
                     </ul>
                 </nav>

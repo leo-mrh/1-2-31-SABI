@@ -7,7 +7,7 @@
   //}
 //}
 //function revisar_usuario(){
-  // return isset($_SESSION['usuario']);   
+  //return isset($_SESSION['usuario']);   
 //}
 //session_start();
 //usuario_autenticado();

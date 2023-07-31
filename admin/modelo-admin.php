@@ -17,7 +17,7 @@ if ($_POST['registro'] == 'nuevo'){
         $password_hashed = password_hash($password, PASSWORD_BCRYPT, $opciones);
             try {
                 $stmt = $conn->prepare("INSERT INTO usuario (nombre_usr, nombre, apellido, password, id_tipo_usuario) VALUES (?, ?, ?, ?, ?)");
-                $stmt->bind_param("ssssi", $usuario, $nombre, $apellido, $password_hashed,$id_tipo_usuario);
+                $stmt->bind_param("ssssi", $usuario, $nombre, $apellido, $password_hashed, $id_tipo_usuario);
                 $stmt->execute();
                 $id_registro = $stmt->insert_id;
                 if($id_registro > 0) {

@@ -77,7 +77,7 @@
 
 <div class="container text-center pt-5">
                 <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-  Copyright &copy;<script>document.write(new Date().getFullYear());</script> Todos los derechos reservados | Leonardo Almeida <i class="icon-heart color-danger" aria-hidden="true"></i> | <a href="https://colorlib.com" target="_blank">SoluClick</a>
+  Copyright &copy;<script>document.write(new Date().getFullYear());</script> Todos los derechos reservados | DSM-31 <i class="icon-heart color-danger" aria-hidden="true"></i> | <a href="https://colorlib.com" target="_blank">SoluClick</a>
   <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
             </div>
 

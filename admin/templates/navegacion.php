@@ -41,7 +41,7 @@
         <li class="treeview">
           <a href="#">
             <i class="fa fa-calendar"></i>
-            <span>Eventos</span>
+            <span>Clientes</span>
           </a>
           <ul class="treeview-menu">
             <li><a href=""><i class="fa fa-list"></i> Ver Todos </a></li>
@@ -51,7 +51,7 @@
         <li class="treeview">
           <a href="#">
             <i class="fa fa-book"></i>
-            <span>Categoria Eventos</span>
+            <span>Ventas</span>
           </a>
           <ul class="treeview-menu">
             <li><a href=""><i class="fa fa-list"></i> Ver Todos </a></li>
@@ -61,7 +61,7 @@
         <li class="treeview">
           <a href="#">
             <i class="fa fa-user-circle"></i>
-            <span>Invitados</span>
+            <span>Productos</span>
           </a>
           <ul class="treeview-menu">
             <li><a href=""><i class="fa fa-list"></i> Ver Todos </a></li>
@@ -71,7 +71,7 @@
         <li class="treeview">
           <a href="#">
             <i class="fa fa-address-card"></i>
-            <span>Registrados</span>
+            <span>Stock</span>
           </a>
           <ul class="treeview-menu">
             <li><a href=""><i class="fa fa-list"></i> Ver Todos </a></li>
@@ -81,7 +81,7 @@
         <li class="treeview">
           <a href="#">
             <i class="fa fa-comments"></i>
-            <span>Testimoniales</span>
+            <span>Establecimientos</span>
           </a>
           <ul class="treeview-menu">
             <li><a href=""><i class="fa fa-list"></i> Ver Todos </a></li>

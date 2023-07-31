@@ -69,6 +69,40 @@ include_once('templates/navegacion.php');
         </div>
     </section>
     <!-- Hero Slider End -->
+
+    <!-- Features Section Begin -->
+    <section class="features-section spad">
+    <div class="features-ads">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="single-features-ads first">
+                        <img src="img/icons/f-delivery.png" alt="">
+                        <h4>Envíos Gratis</h4>
+                        <p>Fusce urna quam, euismod sit amet mollis quis, vestibulum quis velit. Vesti bulum mal
+                            esuada aliquet libero viverra cursus. </p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="single-features-ads second">
+                        <img src="img/icons/coin.png" alt="">
+                        <h4>Grantía de venta</h4>
+                        <p>Urna quam, euismod sit amet mollis quis, vestibulum quis velit. Vesti bulum mal esuada
+                            aliquet libero viverra cursus. </p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="single-features-ads">
+                        <img src="img/icons/chat.png" alt="">
+                        <h4>Soporte en línea 24/7</h4>
+                        <p>Urna quam, euismod sit amet mollis quis, vestibulum quis velit. Vesti bulum mal esuada
+                            aliquet libero viverra cursus. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
 <?php 
 include_once('templates/footer.php');
 ?>
