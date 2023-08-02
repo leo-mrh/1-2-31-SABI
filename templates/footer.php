@@ -1,11 +1,11 @@
 <footer class="footer-section spad">
-       <!-- <div class="container">
+       <div class="container">
             <div class="newslatter-form">
                 <div class="row">
                     <div class="col-lg-12">
                         <form action="#">
-                            <input type="text" placeholder="Your email address">
-                            <button type="submit">Subscribe to our newsletter</button>
+                            <input type="text" placeholder="Tu email...">
+                            <button type="submit">Subscribete para mas info</button>
                         </form>
                     </div>
                 </div>
@@ -14,74 +14,64 @@
                 <div class="row">
                     <div class="col-lg-3 col-sm-6">
                         <div class="single-footer-widget">
-                            <h4>About us</h4>
+                            <h4>Nosotros</h4>
                             <ul>
-                                <li>About Us</li>
-                                <li>Community</li>
-                                <li>Jobs</li>
-                                <li>Shipping</li>
-                                <li>Contact Us</li>
+                                <li>Quiénes somos</li>
+                                <li>Contacto</li>
                             </ul>
                         </div>
                     </div>
                     <div class="col-lg-3 col-sm-6">
                         <div class="single-footer-widget">
-                            <h4>Customer Care</h4>
+                            <h4>Clientes</h4>
                             <ul>
-                                <li>Search</li>
-                                <li>Privacy Policy</li>
-                                <li>2019 Lookbook</li>
-                                <li>Shipping & Delivery</li>
-                                <li>Gallery</li>
+                                <li>Envío y Entrega</li>
+                                <li>Catálogo 2023</li>
+                                <li>Gallería</li>
                             </ul>
                         </div>
                     </div>
                     <div class="col-lg-3 col-sm-6">
                         <div class="single-footer-widget">
-                            <h4>Our Services</h4>
+                            <h4>Servicios</h4>
                             <ul>
-                                <li>Free Shipping</li>
-                                <li>Free Returnes</li>
-                                <li>Our Franchising</li>
-                                <li>Terms and conditions</li>
-                                <li>Privacy Policy</li>
+                                <li>Envios Gratis</li>
+                                <li>Nuestras franquicias</li>
+                                <li>Términos y condiciones</li>
                             </ul>
                         </div>
                     </div>
                     <div class="col-lg-3 col-sm-6">
                         <div class="single-footer-widget">
-                            <h4>Information</h4>
+                            <h4>Información</h4>
                             <ul>
-                                <li>Payment methods</li>
-                                <li>Times and shipping costs</li>
-                                <li>Product Returns</li>
-                                <li>Shipping methods</li>
-                                <li>Conformity of the products</li>
+                                <li>Métodos de pago</li>
+                                <li>Tiempos y gastos de envío</li>
+                                <li>Devolución de productos</li>
+                                <li>Reenvolsos</li>
+                                <li>Conformidad de los productos</li>
                             </ul>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>-->
+        </div>
         <div class="social-links-warp">
-			<div class="container">
+			<div class="container text-center pt-5">
 				<div class="social-links">
-					<a href="" class="instagram"><i class="fa fa-instagram"></i><span>instagram</span></a>
-					<a href="" class="pinterest"><i class="fa fa-pinterest"></i><span>pinterest</span></a>
-					<a href="" class="facebook"><i class="fa fa-facebook"></i><span>facebook</span></a>
-					<a href="" class="twitter"><i class="fa fa-twitter"></i><span>twitter</span></a>
-					<a href="" class="youtube"><i class="fa fa-youtube"></i><span>youtube</span></a>
-					<a href="" class="tumblr"><i class="fa fa-tumblr-square"></i><span>tumblr</span></a>
+					<a href="#" class="instagram"><i class="fa fa-instagram"></i><span>instagram</span></a>
+					<a href="#" class="facebook"><i class="fa fa-facebook"></i><span>facebook</span></a>
+					<a href="#" class="twitter"><i class="fa fa-twitter"></i><span>twitter</span></a>
 				</div>
 			</div>
 
-<div class="container text-center pt-5">
+            <div class="container text-center pt-5">
                 <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-  Copyright &copy;<script>document.write(new Date().getFullYear());</script> Todos los derechos reservados | DSM-31 <i class="icon-heart color-danger" aria-hidden="true"></i> | <a href="https://colorlib.com" target="_blank">SoluClick</a>
-  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+                <div class="under-footer">
+                    <p>Copyright © 2023 SoluClick Estudio | Todos los derechos reservados.</p>
+                </div>
             </div>
-
-
 		</div>
     </footer>
     <!-- Footer Section End -->

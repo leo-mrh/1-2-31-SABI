@@ -1,25 +1,25 @@
 <?php
 if (isset($_POST['login-admin'])){
 
-    $usuario = $_POST['usuario'];
+    $nombre_usr = $_POST['usuario'];
     $password = $_POST['password'];
 
     try {
         include_once('funciones/funciones.php');
-        $stmt = $conn->prepare("SELECT * FROM admin WHERE usuario = ?;");
-        $stmt->bind_param("s", $usuario);
+        $stmt = $conn->prepare("SELECT * FROM usuario WHERE nombre_usr = ?;");
+        $stmt->bind_param("s", $nombre_usr);
         $stmt->execute();
-        $stmt->bind_result($id_admin, $usuario_admin, $nombre_admin, $password_admin, $editado);
+        $stmt->bind_result($id_usuario, $nombre_usr, $nombre, $apellido, $password, $id_tipo_usuario);
         if($stmt->affected_rows){
             $existe = $stmt->fetch();
             if($existe){
-               if(password_verify($password, $password_admin)){
+               if(password_verify($password, $password)){
                    session_start();
-                   $_SESSION['usuario'] = $usuario_admin;
-                   $_SESSION['nombre'] = $nombre_admin;
+                   $_SESSION['usuario'] = $nombre_usr;
+                   $_SESSION['nombre'] = $nombre;
                    $respuesta = array(
                        'respuesta' => 'exitoso',
-                       'usuario' => $nombre_admin
+                       'usuario' => $nombre_usr
                    );
                } else {
                    $respuesta = array(

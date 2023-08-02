@@ -27,70 +27,51 @@
       <!-- sidebar menu: : style can be found in sidebar.less -->
       <ul class="sidebar-menu" data-widget="tree">
         <li class="header">Menú de Adminstración</li>
+
         <li class="treeview">
           <a href="#">
-            <i class="fa fa-dashboard"></i> <span>Dashboard</span>
-            <span class="pull-right-container">
-              <i class="fa fa-angle-left pull-right"></i>
-            </span>
-          </a>
-          <ul class="treeview-menu">
-            <li><a href="#"><i class="fa fa-circle-o"></i> Dashboard </a></li>
-          </ul>
-        </li>
-        <li class="treeview">
-          <a href="#">
-            <i class="fa fa-calendar"></i>
+            <i class="fa fa-users"></i>
             <span>Clientes</span>
           </a>
           <ul class="treeview-menu">
-            <li><a href=""><i class="fa fa-list"></i> Ver Todos </a></li>
+            <li><a href="lista-clientes.php"><i class="fa fa-list"></i> Ver Todos </a></li>
             <li><a href=""><i class="fa fa-plus-circle"></i> Agregar</a></li>
           </ul>
         </li>
         <li class="treeview">
           <a href="#">
-            <i class="fa fa-book"></i>
+            <i class="fa fa-shopping-cart"></i>
             <span>Ventas</span>
           </a>
           <ul class="treeview-menu">
-            <li><a href=""><i class="fa fa-list"></i> Ver Todos </a></li>
+            <li><a href="lista-venta.php"><i class="fa fa-list"></i> Ver Todos </a></li>
             <li><a href=""><i class="fa fa-plus-circle"></i> Agregar</a></li>
           </ul>
         </li>
         <li class="treeview">
           <a href="#">
-            <i class="fa fa-user-circle"></i>
+            <i class="fa fa-tags"></i>
             <span>Productos</span>
           </a>
           <ul class="treeview-menu">
-            <li><a href=""><i class="fa fa-list"></i> Ver Todos </a></li>
+            <li><a href="lista-productos.php"><i class="fa fa-list"></i> Ver Todos </a></li>
              <li><a href=""><i class="fa fa-plus-circle"></i> Agregar</a></li>
           </ul>
         </li>
+
         <li class="treeview">
           <a href="#">
-            <i class="fa fa-address-card"></i>
-            <span>Stock</span>
-          </a>
-          <ul class="treeview-menu">
-            <li><a href=""><i class="fa fa-list"></i> Ver Todos </a></li>
-             <li><a href=""><i class="fa fa-plus-circle"></i> Agregar</a></li>
-          </ul>
-        </li>
-        <li class="treeview">
-          <a href="#">
-            <i class="fa fa-comments"></i>
+            <i class="fa fa-thumb-tack"></i>
             <span>Establecimientos</span>
           </a>
           <ul class="treeview-menu">
-            <li><a href=""><i class="fa fa-list"></i> Ver Todos </a></li>
+            <li><a href="lista-establecimiento.php"><i class="fa fa-list"></i> Ver Todos </a></li>
              <li><a href=""><i class="fa fa-plus-circle"></i> Agregar</a></li>
           </ul>
         </li>
         <li class="treeview">
           <a href="#">
-            <i class="fa fa-user"></i>
+            <i class="fa fa-users"></i>
             <span>Usuarios</span>
           </a>
           <ul class="treeview-menu">

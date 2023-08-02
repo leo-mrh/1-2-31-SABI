@@ -13,11 +13,11 @@
 
 <div class="login-box">
   <div class="login-logo">
-    <a href="../index.php"><b>GDL</b>WebCamp</a>
+    <a href="../index.php"><b>SABI</b>System</a>
   </div>
   <!-- /.login-logo -->
   <div class="login-box-body">
-    <p class="login-box-msg">BIENVENIDO</p>
+    <p class="login-box-msg">Bienvenido</p>
 
 
     <form name="login-admin-form" id="login-admin" method="post" action="login-admin.php">
