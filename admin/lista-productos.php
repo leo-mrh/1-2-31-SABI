@@ -21,7 +21,7 @@
         <div class="col-xs-12">
           <div class="box">
             <div class="box-header">
-              <h3 class="box-title">Maneja la información de los productos realizadas en esta sección</h3>
+              <h3 class="box-title">Maneja la información de los productos en existencia en esta sección</h3>
             </div>
             <!-- /.box-header -->
             <div class="box-body">
@@ -33,14 +33,14 @@
                   <th>Descripcion</th>
                   <th>Precio de Venta</th>
                   <th>Cantidad Existente</th>
-                  <th>Imagen</th>
+               
                   <th>Operaciones</th>
                 </tr>
                 </thead>
                 <tbody>
                         <?php
                             try {
-                                $sql ="SELECT producto.id_producto, producto.codigo, producto.nombre, producto.precio_venta, producto.stock, producto.imagen, tipo_producto.descripcion
+                                $sql ="SELECT producto.id_producto, producto.codigo, producto.nombre, producto.precio_venta, producto.stock, tipo_producto.descripcion
                                 FROM producto
                                 INNER JOIN tipo_producto ON tipo_producto.id_tipo_producto=producto.id_tipo_producto";
                                 $resultado = $conn->query($sql);
@@ -55,15 +55,14 @@
                                     <td><?php echo $producto['descripcion']; ?></td>
                                     <td><?php echo $producto['precio_venta']; ?></td>
                                     <td><?php echo $producto['stock']; ?></td>
-                                    <td><?php echo $producto['imagen']; ?></td>
                                    
                                     <td>
-                                        <a href="editar-admin.php?id=<?php echo $usuario['id_usuario'] ?>" class="btn bg-orange btn-flat margin">
+                                        <a href="editar-producto.php?id=<?php echo $producto['id_producto'] ?>" class="btn bg-orange btn-flat margin">
                                             <i class="fa fa-pencil"></i>
                                         </a>
-                                        <a href="#" data-id="<?php echo $usuario['id_usuario']; ?>" data-tipo="admin" class="btn bg-maroon bnt-flat margin borrar_registro">
-                                        <i class="fa fa-trash"></i>
-                                    </a>       
+                                        <a href="#" data-id="<?php echo $clientes['id_clientes'] ?>" data-tipo="cliente" class="btn bg-maroon bnt-flat margin borrar_registro">
+                                            <i class="fa fa-trash"></i>
+                                        </a>     
                                 </td>
                             </tr>
                           <?php }  ?>
@@ -75,7 +74,7 @@
                   <th>Descripcion</th>
                   <th>Precio de Venta</th>
                   <th>Cantidad Existente</th>
-                  <th>Imagen</th>
+                  
                   <th>Operaciones</th>
                 </tr>
                 </tfoot>

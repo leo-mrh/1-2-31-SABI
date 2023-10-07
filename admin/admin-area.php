@@ -1,5 +1,4 @@
 <?php
-
 include_once('funciones/sesiones.php');
 include_once('templates/header.php');
 include_once('templates/barra.php');
@@ -12,7 +11,7 @@ include_once('templates/navegacion.php');
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
-        Area de Administración
+        Sistema Automatizado de Búsquedas Inteligentes (SABI)
         <small> </small>
       </h1>
     </section>
@@ -22,10 +21,10 @@ include_once('templates/navegacion.php');
       <!-- Default box -->
       <div class="box">
         <div class="box-header with-border">
-          <h3 class="box-title">Title</h3>
+          <h3 class="box-title">Área de Administración</h3>
         </div>
-        <div class="box-body">
-          Start creating your amazing application!
+        <div class="box-body text-center col-md-12">
+          <img src="img/logo1.png" alt="logotipo empresa" width="575" justify="center">
         </div>
         <!-- /.box-body -->
         <div class="box-footer">

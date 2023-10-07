@@ -33,6 +33,8 @@
                   <th>Apellido</th>
                   <th>Teléfono</th>
                   <th>Correo</th>
+                  <th>Dirección</th>
+                  <th>Código Postal</th>
                   <th>Estado</th>
                   <th>Municipio</th>
                   <th>Acciones</th>
@@ -41,7 +43,7 @@
                 <tbody>
                         <?php
                             try {
-                                $sql ="SELECT clientes.id_clientes, clientes.nombre, clientes.apellido, clientes.telefono, clientes.email, estado.nombre_edo, 
+                                $sql ="SELECT clientes.id_clientes, clientes.nombre, clientes.apellido, clientes.telefono, clientes.email, clientes.direccion, clientes.cp, estado.nombre_edo, 
                                 municipio.nombre_mun
                                 FROM clientes
                                 INNER JOIN estado ON clientes.id_edo=estado.id_edo
@@ -58,14 +60,17 @@
                                     <td><?php echo $clientes['apellido']; ?></td>
                                     <td><?php echo $clientes['telefono']; ?></td>
                                     <td><?php echo $clientes['email']; ?></td>
+                                    <td><?php echo $clientes['direccion']; ?></td>
+                                    <td><?php echo $clientes['cp']; ?></td>
                                     <td><?php echo $clientes['nombre_edo']; ?></td>
                                     <td><?php echo $clientes['nombre_mun']; ?></td>
                                     <td>
-                                        <a href="editar-admin.php?id=<?php echo $usuario['id_usuario'] ?>" class="btn bg-orange btn-flat margin">
+                                        <a href="editar-cliente.php?id=<?php echo $clientes['id_clientes'] ?>" class="btn bg-orange btn-flat margin">
                                             <i class="fa fa-pencil"></i>
                                         </a>
-                                        <a href="#" data-id="<?php echo $usuario['id_usuario']; ?>" data-tipo="admin" class="btn bg-maroon bnt-flat margin borrar_registro">
-                                        <i class="fa fa-trash"></i>
+                                        <a href="#" data-id="<?php echo $clientes['id_clientes'] ?>" data-tipo="cliente" class="btn bg-maroon bnt-flat margin borrar_registro">
+                                            <i class="fa fa-trash"></i>
+                                        </a>
                                     </a>       
                                 </td>
                             </tr>
@@ -78,6 +83,8 @@
                   <th>Apellido</th>
                   <th>Teléfono</th>
                   <th>Correo</th>
+                  <th>Dirección</th>
+                  <th>Código Postal</th>
                   <th>Estado</th>
                   <th>Municipio</th>
                   <th>Acciones</th>

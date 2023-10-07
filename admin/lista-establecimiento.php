@@ -61,10 +61,10 @@
                             <td><?php echo $establecimiento['nombre_mun']; ?></td>
                             
                             <td>
-                                <a href="editar-admin.php?id=<?php echo $usuario['id_usuario'] ?>" class="btn bg-orange btn-flat margin">
+                                <a href="editar-establecimiento.php?id=<?php echo $establecimiento['id_establecimiento'] ?>" class="btn bg-orange btn-flat margin">
                                     <i class="fa fa-pencil"></i>
                                 </a>
-                                <a href="#" data-id="<?php echo $usuario['id_usuario']; ?>" data-tipo="admin" class="btn bg-maroon bnt-flat margin borrar_registro">
+                                <a href="#" data-id="<?php echo $establecimiento['id_establecimiento']; ?>" data-tipo="establecimiento" class="btn bg-maroon bnt-flat margin borrar_registro">
                                 <i class="fa fa-trash"></i>
                             </a>       
                         </td>

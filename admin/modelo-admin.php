@@ -1,5 +1,4 @@
 <?php 
-
 include_once('funciones/funciones.php');
 $usuario = $_POST['usuario'];
 $nombre = $_POST['nombre'];
@@ -16,14 +15,15 @@ if ($_POST['registro'] == 'nuevo'){
       );
         $password_hashed = password_hash($password, PASSWORD_BCRYPT, $opciones);
             try {
-                $stmt = $conn->prepare("INSERT INTO usuario (nombre_usr, nombre, apellido, password, id_tipo_usuario) VALUES (?, ?, ?, ?, ?)");
+                $stmt = $conn->prepare("INSERT INTO usuario (usuario, nombre, apellido, password, id_tipo_usuario) VALUES (?, ?, ?, ?, ?)");
                 $stmt->bind_param("ssssi", $usuario, $nombre, $apellido, $password_hashed, $id_tipo_usuario);
                 $stmt->execute();
                 $id_registro = $stmt->insert_id;
                 if($id_registro > 0) {
                     $respuesta = array(
                         'respuesta' => 'exito',
-                        'id_usuario' => $id_registro
+                        'id_usuario' => $id_registro,
+                        header("Location: lista-admin.php")
                     );
                 } else {
                     $respuesta = array(
@@ -42,16 +42,16 @@ if($_POST['registro'] == 'actualizar'){
 
     try {
         if(empty($_POST['password']) ) {
-            $stmt = $conn->prepare("UPDATE usuario SET nombre_usr = ?, nombre = ?, apellido = ?, id_tipo_usuario WHERE id_usuario = ? ");
-            $stmt->bind_param("sssi", $usuario, $nombre, $apellido, $id_tipo_usuario, $id_registro);
+            $stmt = $conn->prepare("UPDATE usuario SET usuario = ?, nombre = ?, apellido = ?, id_tipo_usuario WHERE id_usuario = ? ");
+            $stmt->bind_param("sssii", $usuario, $nombre, $apellido, $id_tipo_usuario, $id_registro);
         } else {
             $opciones = array(
                 'cost' => 12
             );
             
             $hash_password = password_hash($password, PASSWORD_BCRYPT, $opciones);
-            $stmt = $conn->prepare('UPDATE usuario SET nombre_usr = ?, nombre = ?, apellido = ?, password = ?, id_tipo_usuario WHERE id_usuario = ? ');
-            $stmt->bind_param("ssssi", $usuario, $nombre, $apellido, $hash_password, $id_tipo_usuario, $id_registro);
+            $stmt = $conn->prepare('UPDATE usuario SET usuario = ?, nombre = ?, apellido = ?, password = ?, id_tipo_usuario WHERE id_usuario = ? ');
+            $stmt->bind_param("ssssii", $usuario, $nombre, $apellido, $hash_password, $id_tipo_usuario, $id_registro);
         }
 
         $stmt->execute();

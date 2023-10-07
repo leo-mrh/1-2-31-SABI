@@ -35,7 +35,7 @@
           </a>
           <ul class="treeview-menu">
             <li><a href="lista-clientes.php"><i class="fa fa-list"></i> Ver Todos </a></li>
-            <li><a href=""><i class="fa fa-plus-circle"></i> Agregar</a></li>
+            <li><a href="crear-cliente.php"><i class="fa fa-plus-circle"></i> Agregar</a></li>
           </ul>
         </li>
         <li class="treeview">
@@ -45,7 +45,7 @@
           </a>
           <ul class="treeview-menu">
             <li><a href="lista-venta.php"><i class="fa fa-list"></i> Ver Todos </a></li>
-            <li><a href=""><i class="fa fa-plus-circle"></i> Agregar</a></li>
+            <li><a href="crear-venta.php"><i class="fa fa-plus-circle"></i> Agregar</a></li>
           </ul>
         </li>
         <li class="treeview">
@@ -55,7 +55,7 @@
           </a>
           <ul class="treeview-menu">
             <li><a href="lista-productos.php"><i class="fa fa-list"></i> Ver Todos </a></li>
-             <li><a href=""><i class="fa fa-plus-circle"></i> Agregar</a></li>
+             <li><a href="crear-producto.php"><i class="fa fa-plus-circle"></i> Agregar</a></li>
           </ul>
         </li>
 
@@ -66,7 +66,7 @@
           </a>
           <ul class="treeview-menu">
             <li><a href="lista-establecimiento.php"><i class="fa fa-list"></i> Ver Todos </a></li>
-             <li><a href=""><i class="fa fa-plus-circle"></i> Agregar</a></li>
+             <li><a href="crear-establecimiento.php"><i class="fa fa-plus-circle"></i> Agregar</a></li>
           </ul>
         </li>
         <li class="treeview">

@@ -40,7 +40,7 @@
                 <tbody>
                         <?php
                             try {
-                                $sql ="SELECT usuario.id_usuario, usuario.nombre_usr, usuario.nombre ,usuario.apellido ,tipo_usuario.tipo
+                                $sql ="SELECT usuario.id_usuario, usuario.usuario, usuario.nombre ,usuario.apellido ,tipo_usuario.tipo
                                 FROM usuario
                                 INNER JOIN tipo_usuario ON usuario.id_tipo_usuario=tipo_usuario.id_tipo_usuario";
                                 $resultado = $conn->query($sql);
@@ -54,12 +54,12 @@
                                     <td><?php echo $usuario['nombre']; ?></td>
                                     <td><?php echo $usuario['apellido']; ?></td>
                                     <td><?php echo $usuario['tipo']; ?></td>
-                                    <td><?php echo $usuario['nombre_usr']; ?></td>
+                                    <td><?php echo $usuario['usuario']; ?></td>
                                     <td>
                                         <a href="editar-admin.php?id=<?php echo $usuario['id_usuario'] ?>" class="btn bg-orange btn-flat margin">
                                             <i class="fa fa-pencil"></i>
                                         </a>
-                                        <a href="#" data-id="<?php echo $usuario['id_usuario']; ?>" data-tipo="admin" class="btn bg-maroon bnt-flat margin borrar_registro">
+                                        <a href="#" data-id="<?php echo $usuario['id_usuario']; ?>" data-tipo="barberia" class="btn bg-maroon bnt-flat margin borrar_registro">
                                         <i class="fa fa-trash"></i>
                                     </a>       
                                 </td>
@@ -93,4 +93,3 @@
   <?php
           include_once 'templates/footer.php';
   ?>
-

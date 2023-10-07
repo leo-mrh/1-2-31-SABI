@@ -1,4 +1,3 @@
-
 <?php
 $id = $_GET['id'];
 if(!filter_var($id, FILTER_VALIDATE_INT)){ //Se niega
@@ -38,11 +37,11 @@ include_once('templates/navegacion.php');
                     $resultado = $conn->query($sql);
                     $usuario = $resultado->fetch_assoc();
                 ?>
-            <form role="form" name="guardar-registro" id="guardar-registro-archivo" method="post" action="modelo-admin.php">
+            <form role="form" name="guardar-registro" id="" method="post" action="modelo-admin.php">
               <div class="box-body">
                   <div class="form-group">
                       <label for="usuario">Nombre de Usuario:</label>
-                      <input type="text" class="form-control" id="usuario" name="usuario" placeholder="Tu Usuario" value="<?php echo $usuario['nombre_usr']; ?>" >
+                      <input type="text" class="form-control" id="usuario" name="usuario" placeholder="Tu Usuario" value="<?php echo $usuario['usuario']; ?>" >
                   </div>
                   <div class="form-group">
                     <label for="nombre">Nombre:</label>
@@ -106,6 +105,3 @@ include_once('templates/navegacion.php');
   <!-- /.content-wrapper -->
 
 <?php include_once('templates/footer.php'); ?>
-
-
-

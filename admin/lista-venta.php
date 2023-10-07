@@ -34,6 +34,7 @@
                   <th>Subtotal</th>
                   <th>Total</th>
                   <th>Nombre Cliente</th>
+                  <th>Apellido Cliente</th>
                   <th>Operaciones</th>
                 </tr>
                 </thead>
@@ -48,19 +49,20 @@
                                 $error = $e->getMessage();
                                 echo $error;
                             }
-                            while($clientes = $resultado->fetch_assoc() ) { ?>
+                            while($venta = $resultado->fetch_assoc() ) { ?>
                                 <tr>
-                                    <td><?php echo $clientes['id_venta']; ?></td>
-                                    <td><?php echo $clientes['fecha']; ?></td>
-                                    <td><?php echo $clientes['hora']; ?></td>
-                                    <td><?php echo $clientes['subtotal']; ?></td>
-                                    <td><?php echo $clientes['total']; ?></td>
-                                    <td><?php echo $clientes['nombre']; ?></td>
+                                    <td><?php echo $venta['id_venta']; ?></td>
+                                    <td><?php echo $venta['fecha']; ?></td>
+                                    <td><?php echo $venta['hora']; ?></td>
+                                    <td><?php echo $venta['subtotal']; ?></td>
+                                    <td><?php echo $venta['total']; ?></td>
+                                    <td><?php echo $venta['nombre']; ?></td>
+                                    <td><?php echo $venta['apellido']; ?></td>
                                     <td>
-                                        <a href="editar-admin.php?id=<?php echo $usuario['id_usuario'] ?>" class="btn bg-orange btn-flat margin">
+                                        <a href="editar-venta.php?id=<?php echo $venta['id_venta'] ?>" class="btn bg-orange btn-flat margin">
                                             <i class="fa fa-pencil"></i>
                                         </a>
-                                        <a href="#" data-id="<?php echo $usuario['id_usuario']; ?>" data-tipo="admin" class="btn bg-maroon bnt-flat margin borrar_registro">
+                                        <a href="#" data-id="<?php echo $venta['id_venta']; ?>" data-tipo="venta" class="btn bg-maroon bnt-flat margin borrar_registro">
                                         <i class="fa fa-trash"></i>
                                     </a>       
                                 </td>
@@ -75,6 +77,7 @@
                   <th>Subtotal</th>
                   <th>Total</th>
                   <th>Nombre Cliente</th>
+                  <th>Apellido Cliente</th>
                   <th>Operaciones</th>
                 </tr>
                 </tfoot>

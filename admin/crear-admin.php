@@ -27,7 +27,7 @@ include_once('templates/navegacion.php');
                   <h3 class="box-title">Llena el formulario para crear un Usuario</h3>
                 </div>
                 <div class="box-body">
-                <form role="form" name="guardar-registro" id="guardar-registro" method="post" action="modelo-admin.php">
+                <form role="form" name="guardar-registro" id="" method="post" action="modelo-admin.php">
                       <div class="box-body">
                           <div class="form-group">
                               <label for="usuario">Nombre de Usuario:</label>
@@ -85,9 +85,8 @@ include_once('templates/navegacion.php');
                       </div>
                       <!-- /.box-body -->
                       <div class="box-footer">
-                        <input type="hidden" name="registro" value="nuevo">
-                        <input type="hidden" name="id_registro" value="<?php echo $id; ?> ">
-                        <button type="submit" class="btn btn-primary" id="crear_registro">Añadir</button>
+                          <input type="hidden" name="registro" value="nuevo">
+                          <button type="submit" class="btn btn-primary" id="crear_registro">Añadir</button>
                       </div>
                     </form>
                 </div>
